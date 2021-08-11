@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    margin-top: 4em;
+    margin-left: 4.5em;
+    background: url("images/bg-desktop.svg") no-repeat hsl(257, 40%, 49%) ;
+    font-size: 16px;
+}
+#logo{
+    width: 13em;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+
+}
+a{
+    text-decoration: none;
+}
+
+main p,a {
+    font-family: 'Open Sans', sans-serif;
+}
+#social-media{
+    /* position: relative; */
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3em;
+    position: relative;
+    bottom: 3em;
+}
+#social-media img{
+    margin: 0em 0.5em;
+    width: 3em;
+    height: auto;
+}
+
+main{
+    margin: 4.5em 0em;
+    display: flex;
+    /* column-gap: 5em; */
+    /* align-items: center; */
+    color: white;
+}
+main div{
+    /* background-color: turquoise; */
+    margin: 3em 4em;
+}
+
+main div p{
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+    padding-right: 4.5em;
+}
+
+main div a{
+    background-color: white;
+    box-shadow: 0em 0.2em  1em rgb(78, 72, 72);
+    /* border: solid 1px white; */
+    /* margin-top: 10em; */
+    padding: 1em 3.5em;
+    border-radius: 3em;
+    /* color:   ; */
+}
+main div a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+@media(max-width:376px){
+    #logo{
+        width: 7.8em;
+    }
+    body{
+        margin: 2em 2.3em;
+        background: url("images/bg-mobile.svg") no-repeat hsl(257, 40%, 49%) ;
+    }
+    main{
+        flex-direction: column;
+        margin: 3.5em 0em;
+    }
+    h2{
+        font-size:x-large ;
+    }
+    main div p{
+        padding-right: 0.5em;
+    }
+    main div{
+        margin: 4em -0.3em;
+        text-align: center;
+    }
+    main div a{
+        padding: 0.5em 5em;
+    }
+}
